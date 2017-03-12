@@ -4,16 +4,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<title>BookSell.com - Buy and Sell books instantly</title>
-
     <!-- Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- Custom Stylesheet -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
     
   </head>
   <body>
+<!-- Navigation Bar starts -->
     <nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid"> 
 			<div class="navbar-header">
@@ -35,7 +35,68 @@
 			<span><a href="#">Cart</a></span>
 		</div>
 	</nav>
+<!-- Navigation Bar ends -->
+	<div class="container-fluid">
+		<!-- Home Banner Starts -->
+			<div class="row">
+				<section>
+					<div class="mainHeading">
+						<h1>BookSell.com</h1>
+						<h3>One-stop Destination To Sell & Purchase Books</h3>
+					</div>
+					<div class="searchForm">
+						<ul class="nav nav-pills nav-justified" role="tablist">
+							<li role="presentation" class="active"><a href="#nameSearch" aria-controls="nameSearch" role="tab" data-toggle="tab">Search By Name</a></li>
+							<li role="presentation"><a href="#courseSearch" aria-controls="courseSearch" role="tab" data-toggle="tab">Search By Course</a></li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane fade in active" id="nameSearch">
+								<form class="form-inline">
+									<div class="form-group">
+										<input type="text" placeholder="Search" id="nameValue" class="form-control">
+									</div>
+									<button type="submit" id="nameSubmit" class="btn btn-default">Go</button>
+								</form>
+							</div>
+							<div class="tab-pane fade" id="courseSearch">
+								<form class="form-inline">
+									<div class="form-group">
+										<select class="form-control" id="semList">
+											<option value="">Semester</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<select class="form-control" id="courseList">
+											<option value="">Course</option>
+											<option value="CSE">CSE</option>
+											<option value="ECE">ECE</option>
+											<option value="IT">IT</option>
+											<option value="ME">ME</option>
+											<option value="EEE">EEE</option>
+										</select>
+									</div>
+									<button type="submit" id="courseSubmit" class="btn btn-default">Go</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+		<!-- Home Banner Ends -->
+	</div>
+
+	<!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
 </html>
